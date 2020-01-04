@@ -5,6 +5,19 @@
         </title>
     </head>
     <body>
-        
+        <script>
+            console.log("online bingo!!!")
+
+            var cellsArray=[];
+            for(let i = 0 ; i < 25; i++){
+                var cell = document.createElement("BUTTON");
+                cellsArray.push(cell)
+            }
+            for(let i = 0 ; i < 25; i++){
+                document.body.appendChild(cellsArray[i]);
+            }
+
+            
+        </script>
     </body>
 </html>
