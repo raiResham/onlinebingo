@@ -10,14 +10,21 @@
 
             var cellsArray=[];
             for(let i = 0 ; i < 25; i++){
+                // Dynamically creates a button
                 var cell = document.createElement("BUTTON");
+                // set unique id to the cell
+                cell.id = i
+                // Add click listener to the cell
+                cell.onclick = function(e){
+                    console.log(e.target.id)
+                }
+                // pushs newly created cell to cellsArray
                 cellsArray.push(cell)
-            }
-            for(let i = 0 ; i < 25; i++){
-                document.body.appendChild(cellsArray[i]);
+                
+                document.body.appendChild(cell);
             }
 
-            
+
         </script>
     </body>
 </html>
